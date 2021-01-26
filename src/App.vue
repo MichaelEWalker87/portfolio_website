@@ -2,8 +2,14 @@
   <div id="app">
     <the-container>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">
+        <img alt="Home" src="./images/Home_Red.png"/>
+        <p>Home</p>
+      </router-link> |
+      <router-link to="/project">
+        <img alt="Projects" src="./images/NoteBook_color.png"/>
+        <p>Projects</p>
+      </router-link>
     </div>
       <router-view/>
     </the-container>
