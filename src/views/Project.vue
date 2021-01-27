@@ -3,7 +3,6 @@
     <h1>Project</h1>
     <section class="project-body">
       <ProjectLeft/>
-      <ProjectRight/>
     </section>
   </section>
 </template>
@@ -11,13 +10,11 @@
 
 <script>
   import ProjectLeft from '../components/ProjectLeft';
-  import ProjectRight from '../components/ProjectRight';
 
   export default {
       name: 'Project',
       components: {
       ProjectLeft,
-      ProjectRight
     }
   }
 </script>

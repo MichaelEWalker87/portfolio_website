@@ -6,7 +6,7 @@
         <p>
           {{project.body}}
         </p>
-        <img :src='project.images'>
+        <ProjectSlider :photos="project.photos"/>
       </section>
       <a :href='project.github' class="git-hub">
         <img
@@ -19,11 +19,22 @@
 </template>
 
 <script>
+import ProjectSlider from './ProjectSlider';
 import page from '../images/project_work/page_1.png';
 import page2 from '../images/project_work/page_2.png';
 import page3 from '../images/project_work/page_3.png';
 
-  export default {
+export default {
+  name: 'ProjectLeft',
+
+  components: {
+    ProjectSlider,
+  },
+
+  props: {
+    photos: Array,
+  },
+
   data(){
     return{
       projects: [
@@ -31,17 +42,19 @@ import page3 from '../images/project_work/page_3.png';
           name: 'thing1',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           github: 'https://www.w3schools.com',
-          images: [page, page2, page3]
+          photos: [page, page2, page3, page3]
         },
         {
           name: 'thing2',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          github: 'https://www.w3schools.com'
+          github: 'https://www.w3schools.com',
+          photos: [page3, page2, page3]
         },
         {
           name: 'the thing',
           body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          github: 'https://www.w3schools.com'
+          github: 'https://www.w3schools.com',
+          photos: [page2, page2, page2]
         },
       ]
     }
@@ -75,6 +88,6 @@ import page3 from '../images/project_work/page_3.png';
 
   .project-layout{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 </style>
