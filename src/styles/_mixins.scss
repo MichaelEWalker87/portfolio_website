@@ -1,0 +1,22 @@
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@mixin title-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 0.7em;
+  margin-left: 0.5em;
+  letter-spacing: 0em;
+  text-align: left;
+  color:$red-text;
+}
+
+@mixin p-text {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  margin-left: 2em;
+  letter-spacing: 0em;
+  color: $purple-text;
+}

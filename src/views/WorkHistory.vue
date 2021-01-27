@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Contact</h1>
+    <h1>Work History</h1>
   </section>
 </template>
 
