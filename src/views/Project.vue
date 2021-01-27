@@ -29,8 +29,6 @@ h1{
 }
 
 .project-body{
-  // display: grid;
-  // grid-template-columns: 2fr 1fr;
   align-items: center;
   justify-items: center;
 }

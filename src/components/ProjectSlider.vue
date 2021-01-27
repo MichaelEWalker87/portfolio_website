@@ -30,12 +30,12 @@
   }
 
   .VueCarousel-pagination .VueCarousel-dot {
-        background-color: $background-blue !important;
+    background-color: $background-blue !important;
   }
 
 
   .VueCarousel-pagination .VueCarousel-dot--active {
-        background-color: $red-text !important;
+    background-color: $red-text !important;
   }
 
   .VueCarousel{
