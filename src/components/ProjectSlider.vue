@@ -1,6 +1,6 @@
 <template>
   <carousel :perPageCustom="[[0, 1], [768, 1], [1024, 1]]">
-    <slide v-for="photo in photos" :key="photo">
+    <slide v-for="(photo, index) in photos" :key="photo+index">
       <img :src="photo"/>
     </slide>
   </carousel>
@@ -12,11 +12,6 @@
     props: {
       photos: Array
     }, 
-    // methods: {
-    //   createSlides(){
-    //     console.log(this.photos)
-    //   }
-    // }
   }
 </script>
 
@@ -39,11 +34,10 @@
   }
 
   .VueCarousel{
-    border-width: thick;
-    border-color: blue;
-    border-style: double;
+    background-color: darken($color: $background-paper, $amount: 10%);
     height: fit-content;
     min-width: fit-content;
+    margin-bottom: 1em;
   }
   img {
     width: 50em;

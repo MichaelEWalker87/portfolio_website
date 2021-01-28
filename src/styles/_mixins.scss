@@ -27,6 +27,23 @@
   font-weight: bold;
   color: $purple-text;
   letter-spacing: 0em;
-  font-size: 1.7em;
   text-decoration: none;
+}
+
+@mixin p-work-history {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  letter-spacing: 0em;
+  color: $purple-text;
+  font-size: 1.1em;
+  margin-left: 0.5em;
+  margin-right: 1em;
+}
+
+
+@mixin p-text-no-margin {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  letter-spacing: 0em;
+  color: $purple-text;
 }

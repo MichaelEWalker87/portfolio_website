@@ -1,24 +1,26 @@
 <template>
   <section class="work-section">
-    <section class="work-section-right">
-      <h2>Istonish</h2>
+    <section v-for="(job, index) in jobs" :key="index+'job.name'"
+      class="work-section-right"
+    >
+      <h2>{{job.name}}</h2>
       <section class="company-info">
-        <img src="../images/work_photos/Istonish.jpg"/>
-        <h3 class="info-right">Infomation Tecnolgy</h3>
-        <p class="info-right">From 20xx - 20xx</p>
+        <img :src="job.image"/>
+        <h3 class="info-right sub-title">{{job.title}}</h3>
+        <p class="info-right">{{job.dates}}</p>
         <a 
           class="info-right"
-          href="https://www.vuemastery.com/courses/intro-to-vue-js/tabs"
+          :href="job.link"
         >
-          link to website
+          Link To Website
         </a>
-        <p class="info-right">Denver, CO</p>
+        <p class="info-right">{{job.location}}</p>
       </section>
     </section>
-    <section class="description">
-      <p>
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-      </p>
+    <section v-for="(job, index) in jobs" :key="index"
+      class="description"
+    >
+      <p class="text-body">{{job.body}}</p>
     </section>
     <section class="icons">
       <!-- <img src="../images/Award_pur.png"/>
@@ -29,32 +31,34 @@
 </template>
 
 <script>
-export default {
-  name: 'HistoryBody',
+  import Istonish from '../images/work_photos/Istonish.jpg'
+  export default {
+    name: 'HistoryBody',
 
-  components: {
+    components: {
 
-  },
+    },
 
-  props: {
-    photos: Array,
-  },
+    props: {
+      photos: Array,
+    },
 
-  data(){
-    return{
-      workHistoryList: [
-        {
-          name: 'Istonish',
-          body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          link: 'https://www.w3schools.com',
-          image: '',
-          dates: '',
-          location: '',
-        }, 
-      ]
+    data(){
+      return{
+        jobs: [
+          {
+            name: 'Istonish',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            link: 'https://www.w3schools.com',
+            image: Istonish,
+            dates: 'From 2019-2020',
+            title: "Information Technology", 
+            location: 'Denver, CO',
+          }, 
+        ]
+      }
     }
   }
-}
 </script>
 
 <style lang="scss" scoped>
@@ -80,8 +84,14 @@ export default {
     grid-row-end: span 4;
   }
 
+
   .info-right{
     grid-column-start: 2;
+    text-decoration: none;
+    @include p-work-history();
+  }
+  .sub-title{
+    margin-bottom: 0em;
   }
 
   .work-section{
@@ -102,5 +112,10 @@ export default {
     img{
       width: 3em;
     }
+  }
+
+  .text-body{
+    font-size: 1.1em;
+    @include p-text-no-margin()
   }
 </style>

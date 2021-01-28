@@ -1,19 +1,19 @@
 <template>
   <section>
-    <section v-for="(project, index) in projects" :key="index">
+    <section v-for="(project, index) in projects" :key="index + 'project.name'">
       <h2>{{project.name}}</h2>
-      <section class="project-layout">
-        <p>
-          {{project.body}}
-        </p>
-        <ProjectSlider :photos="project.photos"/>
-      </section>
       <a :href='project.github' class="git-hub">
         <img
           src="../images/GitHub_pur.png"
         />
         {{project.name}} Link to Github
       </a>
+      <section class="project-layout">
+        <p>
+          {{project.body}}
+        </p>
+        <ProjectSlider :photos="project.photos"/>
+      </section>
     </section>
   </section>
 </template>
@@ -87,7 +87,8 @@ export default {
   }
 
   .project-layout{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 </style>
