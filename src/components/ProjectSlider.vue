@@ -35,10 +35,12 @@
 
   .VueCarousel{
     background-color: darken($color: $background-paper, $amount: 10%);
+    border-radius: 1em;
     height: fit-content;
     min-width: fit-content;
     margin-bottom: 1em;
   }
+  
   img {
     width: 50em;
     text-align: center;
