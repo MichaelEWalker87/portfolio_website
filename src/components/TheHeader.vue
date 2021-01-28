@@ -2,9 +2,9 @@
   <section id="nav">
     <img alt="Site Logo" src="../images/MW_Logo_OG.png" class='logo'/>
     <img alt="Name" src="../images/Name_color.png" class='name'/>
-    <div @click= "setActiveLink('Home')">
+    <div @click= "setActiveLink('Home')" class="icon-div">
     <router-link to="/">
-      <img v-if="selectedLink !== 'Home'"
+      <img v-if="selectedLink !== 'Home' "
         @click= "setActiveLink('Home')"
         alt="Projects" 
         src="../images/Home_color.png" 
@@ -17,7 +17,7 @@
       />
     </router-link> 
     </div>
-    <div @click= "setActiveLink('Project')">
+    <div @click= "setActiveLink('Project')" class="icon-div">
       <router-link to="/Project">
         <img v-if="selectedLink !== 'Project'"
           @click= "setActiveLink('Project')"
@@ -32,7 +32,7 @@
         />
       </router-link>
     </div>
-    <div @click= "setActiveLink('WorkHistory')">
+    <div @click= "setActiveLink('WorkHistory')" class="icon-div">
       <router-link to="/WorkHistory">
         <img v-if="selectedLink !== 'WorkHistory'"
           @click= "setActiveLink('WorkHistory')"
@@ -47,7 +47,7 @@
         />
       </router-link>
     </div>
-    <div @click= "setActiveLink('Contact')">
+    <div @click= "setActiveLink('Contact')" class="icon-div">
       <router-link to="/Contact">
         <img v-if="selectedLink !== 'Contact'" 
           @click= "setActiveLink('Contact')"
@@ -114,6 +114,74 @@ methods:{
       border-radius: 100%;
       padding: 0.75em 1.2em;
       margin-left: 1em;
+    }
+    @media screen  and (max-width: 940px){
+      
+      .name{
+        width: 24em;
+        height: 7em;
+      }
+      .logo{
+        justify-self: center;
+        width: 2.5em;
+        padding: 0.75em 1.1em;
+      }
+      .nav-button{
+        margin-top: 0.5em;
+        width: 4em;
+      }
+      
+      .home{
+        width: 5em;
+      }
+    }
+    @media screen  and (max-width: 800px){
+      
+      .name{
+        width: 20em;
+        height: 6em;
+        padding-left: 0.2em;
+      }
+      .logo{
+        justify-self: center;
+        width: 2.2em;
+        padding: 0.7em 1.0em;
+      }
+      .nav-button{
+        margin-top: 0.5em;
+        width: 3.5em;
+      }
+      
+      .home{
+        width: 4.5em;
+      }
+    }
+    @media screen  and (max-width: 650px){
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      
+      .icon-div {
+        grid-row-start: 2;
+        margin-top: -0.3em;
+      }
+      .name{
+        grid-column-end: span 3;
+        width: 20em;
+        height: 4em;
+        margin-top: -0.7em;
+      }
+      .logo{
+        justify-self: center;
+        width: 2em;
+        padding: 0.6em 0.9em;
+      }
+      .nav-button{
+        margin-top: 0.5em;
+        width: 3.5em;
+      }
+      
+      .home{
+        width: 4.5em;
+      }
     }
   }
 </style>

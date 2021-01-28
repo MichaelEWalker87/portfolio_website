@@ -64,6 +64,9 @@
   width: 20em;
   margin-left: 2em;
   margin-bottom: 1em;
+  @media screen  and (max-width: 600px){
+    width: 15em;
+  }
 }
 
 .contact{
@@ -97,6 +100,9 @@ p{
   @include p-contact();
   @media screen  and (max-width: 700px){
     font-size: 1.2em;
+  }
+  @media screen  and (max-width: 600px){
+    font-size: 1em;
   }
 }
 
@@ -140,12 +146,18 @@ p{
   @media screen  and (max-width: 700px){
     width: 19em;
   }
+  @media screen  and (max-width: 600px){
+    width: 16em;
+  }
 }
 .phone-number{
   width: 12em;
   padding-left: 1em;
   @media screen  and (max-width: 700px){
     width: 9em;
+  }
+  @media screen  and (max-width: 600px){
+    width: 7.5em;
   }
 }
 

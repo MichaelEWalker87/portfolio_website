@@ -43,6 +43,15 @@
     width: 50em;
     text-align: center;
     align-self: center;
+    @media screen  and (max-width: 955px){
+      width: 40em;
+    }
+    @media screen  and (max-width: 755px){
+      width: 30em;
+    }
+    @media screen  and (max-width: 655px){
+      width: 23em;
+    }
   }
   .VueCarousel-pagination{
     margin-top: -2em;
