@@ -1,7 +1,7 @@
 <template>
   <carousel :perPageCustom="[[0, 1], [768, 1], [1024, 1]]">
-    <slide v-for="(photo, index) in photos" :key="index">
-      <img :src='photo'/>
+    <slide v-for="photo in photos" :key="photo">
+      <img :src="photo"/>
     </slide>
   </carousel>
 </template>
@@ -12,11 +12,11 @@
     props: {
       photos: Array
     }, 
-    methods: {
-      createSlides(){
-        console.log(this.photos)
-      }
-    }
+    // methods: {
+    //   createSlides(){
+    //     console.log(this.photos)
+    //   }
+    // }
   }
 </script>
 

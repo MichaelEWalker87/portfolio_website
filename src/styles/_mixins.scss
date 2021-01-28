@@ -20,3 +20,13 @@
   letter-spacing: 0em;
   color: $purple-text;
 }
+
+@mixin p-contact {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: $purple-text;
+  letter-spacing: 0em;
+  font-size: 1.7em;
+  text-decoration: none;
+}
