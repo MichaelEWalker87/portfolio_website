@@ -29,7 +29,7 @@
             src="../images/Resume_pur.png"
             class="icons"
           />
-          <p>Contact for My Resume</p>
+          <p>Contact For Resume</p>
         </section>
         <a 
           class="contact-info"
@@ -163,5 +163,12 @@ p{
 
 h1{
   @include title-text();
+}
+
+a{
+  &:hover{
+    @include hover();
+    font-size: 110%;
+  }
 }
 </style>

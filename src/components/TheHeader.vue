@@ -85,6 +85,7 @@ methods:{
 
 <style lang="scss" scoped>
   @import '../styles/_variables.scss';
+  @import '../styles/_mixins.scss';
 
   #nav {
     display: grid;
@@ -114,6 +115,13 @@ methods:{
       border-radius: 100%;
       padding: 0.75em 1.2em;
       margin-left: 1em;
+    }
+
+    .icon-div{
+      &:hover{
+        background-color: darken($color: $background-blue, $amount: 10%);
+        border-radius: 1em;
+      }
     }
     @media screen  and (max-width: 940px){
       
@@ -163,6 +171,7 @@ methods:{
         grid-row-start: 2;
         margin-top: -0.3em;
       }
+
       .name{
         grid-column-end: span 3;
         width: 20em;

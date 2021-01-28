@@ -95,6 +95,13 @@
         grid-column-end: span 2;
         margin-bottom: 0.5em;
       }
+      
+      a{
+        &:hover{
+          @include hover();
+          font-size: 120%;
+        }
+      }
       .text-body{
         grid-row-start: 5;
         grid-column-start: 1;

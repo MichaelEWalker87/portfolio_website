@@ -81,8 +81,16 @@ export default {
     @include p-text();
     display: inline-flex;
     align-items: center;
+    text-decoration: none;
     img{
       width: 2em;
+    }
+    &:hover{
+      @include hover();
+      font-size: 105%;;
+      img{
+        width: 2.3em;
+      }
     }
   }
 

@@ -47,3 +47,8 @@
   letter-spacing: 0em;
   color: $purple-text;
 }
+
+@mixin hover {
+  background-color: darken($color: $background-paper, $amount: 10%);
+  border-radius: 0.5em;
+}
