@@ -27,7 +27,6 @@
     padding: 0px;
     margin: 0px;
     background-color: $background-paper;
-    width: fit-content;
   }
 
 </style>
