@@ -1,66 +1,45 @@
 <template>
-  <carousel :perPageCustom="[[0, 1], [768, 1], [1024, 1]]">
-    <slide v-for="(photo, index) in photos" :key="photo+index">
-      <img :src="photo"/>
-    </slide>
-  </carousel>
+	<splide class="splide-show" :options="options">
+		<splide-slide v-for="(photo, index) in photos" :key="index">
+			<img :src="photo" alt="" />
+		</splide-slide>
+	</splide>
 </template>
 
 <script>
-  export default {
-    name: 'ProjectSlider',
-    props: {
-      photos: Array
-    }, 
-  }
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+export default {
+	components: {
+		Splide,
+		SplideSlide,
+	},
+	name: 'ProjectSlider',
+	props: {
+		photos: Array,
+	},
+	data() {
+		return {
+			options: {
+				rewind: true,
+				width: 800,
+				perPage: 1,
+				gap: '1rem',
+			},
+		};
+	},
+};
 </script>
 
 <style lang="scss">
-  @import '../styles/_variables.scss';
-  @import '../styles/_mixins.scss';
-  .VueCarousel-slide{
-    text-align: center;
-    width: 0em;
-    height: fit-content;
-  }
+@import '../styles/_variables.scss';
+@import '../styles/_mixins.scss';
+img {
+	width: 100%;
+}
 
-  .VueCarousel-pagination .VueCarousel-dot {
-    background-color: $background-blue !important;
-  }
-
-
-  .VueCarousel-pagination .VueCarousel-dot--active {
-    background-color: $red-text !important;
-  }
-
-  .VueCarousel{
-    background-color: darken($color: $background-paper, $amount: 10%);
-    border-radius: 1em;
-    height: fit-content;
-    min-width: fit-content;
-    margin-bottom: 1em;
-  }
-  
-  img {
-    width: 50em;
-    text-align: center;
-    align-self: center;
-    @media screen  and (max-width: 955px){
-      width: 40em;
-    }
-    @media screen  and (max-width: 755px){
-      width: 30em;
-    }
-    @media screen  and (max-width: 655px){
-      width: 23em;
-    }
-  }
-  .VueCarousel-pagination{
-    margin-top: -2em;
-  }
-
-  .VueCarousel-slide-active{
-    width: fit-content;
-  }
+.splide-show {
+	padding-bottom: 30px;
+  width: 100%
+}
 </style>
-
