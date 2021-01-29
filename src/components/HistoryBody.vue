@@ -29,7 +29,16 @@
 </template>
 
 <script>
+  // import Turing from '../images/work_photos/Turing.png'
   import Istonish from '../images/work_photos/Istonish.jpg'
+  import TMobile from '../images/work_photos/TMobile.png'
+  import Arvada from '../images/work_photos/Arvada.png'
+  import Curious from '../images/work_photos/Curious.png'
+  import Utah from '../images/work_photos/Utah.png'
+  import OU from '../images/work_photos/OU.png'
+  import OUDaily from '../images/work_photos/Daily.png'
+  import AirForce from '../images/work_photos/AriForce.png'
+
   export default {
     name: 'HistoryBody',
 
@@ -46,21 +55,75 @@
         jobs: [
           {
             name: 'Istonish',
-            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            link: 'https://www.w3schools.com',
+            body: 'Worked as an IT Specialist and exceeded in living up to the core values of the team and company. I devoted my days to listening to our client\'s needs and translating them to actionable outcomes that benefited the communities we served. Helped foster an environment that cultivated a growth mindset forefront. I worked with our team leads to help bring people on and assisted in the training and shadowing process. Through listening and analyzing the client\'s problems I was able to make a difference and help those with computers and networking issues by resolving without escalation 90 percent of the time.',
+            link: 'https://www.istonish.com/',
             image: Istonish,
             dates: 'From 2019-2020',
-            title: "Information Technology", 
+            title: "Information Technology Specialist", 
+            location: 'Greenwood Village, CO',
+          }, 
+          {
+            name: 'T-Vison',
+            body: 'Helped launch new sales markets for T-Mobile\'s new TV Entertainment Department. In addition, I excelled in outbound sales call efforts and fielded incoming sales leads. I conducted campaigns to help with the company\'s churn rate. Aided in building flyers for promotional events within the company. I also maintained a working knowledge of the various products on the market and how they differ from Layer3 TV. Programs used daily to conduct business included SalesForce, Avaya, Maestro, and Google Calendar.',
+            link: 'https://www.t-mobile.com/tvision',
+            image: TMobile,
+            dates: 'From 2018-2019',
+            title: "Telesales Specialist", 
             location: 'Denver, CO',
           }, 
           {
-            name: 'Istonish',
-            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            link: 'https://www.w3schools.com',
-            image: Istonish,
-            dates: 'From 2019-2020',
-            title: "Information Technology", 
+            name: 'Arvada Center for the Arts and Humanities',
+            body: 'In this position, I honed my project management skills and ability to work in a fast-paced detail-oriented environment. Collaborated with leading members of the art community from around the world to help build theatrical productions. Tasks included: design implementation, 3-D drafting, Excel programming, and communication with the production staff.',
+            link: 'https://www.arvadacenter.org/',
+            image: Arvada,
+            dates: 'From 2015-2018',
+            title: "Production Specialist", 
+            location: 'Arvada, CO',
+          }, 
+          {
+            name: 'Curious Theatre Company',
+            body: 'Built new productions working alongside the Theatrical Director and an award-winning group of theatrical professionals. I often led large projects from initial design to final installation. Additionally, I managed crews for all shows in the season with various levels of management responsibilities. I assisted with the budget management of the season\'s productions.',
+            link: 'https://www.curioustheatre.org/',
+            image: Curious,
+            dates: 'From 2014-2015',
+            title: "Assistant Technical Director", 
             location: 'Denver, CO',
+          }, 
+          {
+            name: 'Utah Shakespear Festival',
+            body: 'Managed large stage crews, responsibilities included making a daily schedule for the crew and management of 4 theatrical spaces. Additionally, I oversaw all daily scenic changeovers and audience tech talks. Tracked all needed repairs, created Changeover Reports, purchased all needed materials for production upkeep, and facilitated general notes for the theatrical spaces.',
+            link: 'https://www.bard.org/',
+            image: Utah,
+            dates: 'From 2014-2014',
+            title: "Stage Supervisor", 
+            location: 'Cider City, UT',
+          }, 
+          {
+            name: 'Univerity of Oklahoma',
+            body: 'Completed lead projects with peers and other students from the stagecraft and production classes. I would be instrumental in the training and safety implementation for technical courses. Additional I would works a a Technical Director on various projects, overseeing and working closely with the design teams. Additionally I assisted with building, painting, and installing scenery for University Theatre.',
+            link: 'https://www.ou.edu/finearts/drama',
+            image: OU,
+            dates: 'From 2011-2014',
+            title: "Undergraduate Assistant", 
+            location: 'Norman, OK',
+          }, 
+          {
+            name: 'Univerity of Oklahoma Video and Media Services',
+            body: 'Worked with local and national businesses to build advertising for the targeted market. We primarily used Adobe products to execute the design. We would also talk to the client on a one-on-one basis to help develop and establish lasting relationships.',
+            link: 'http://www.oudaily.com/news/',
+            image: OUDaily,
+            dates: 'From 2011-2012',
+            title: "Graphic Designer", 
+            location: 'Norman, OK',
+          }, 
+          {
+            name: 'United States Air Force',
+            body: 'As a Graphic Designer for the Air Force I primarily built training and recruiting material, and other projects as assigned. We worked with a variety of programs, most notably the Adobe series of products. I was also lead fitness trainer for the advance fitness group and formation leader. I was honorably discharged.',
+            link: 'https://www.dinfos.dma.mil/Student-Info/Service-In-processing/Air-Force/',
+            image: AirForce,
+            dates: 'From 2006-2006 (Honorable Separation)',
+            title: "Graphic Designer", 
+            location: 'Fort Meade, MD',
           }, 
         ]
       }
@@ -132,6 +195,10 @@
     grid-row-end: span 4;
   }
 
+  .work-section-right{
+    margin-bottom: 1em;
+    max-width: 1300px;
+  }
 
   .info-right{
     grid-column-start: 2;
