@@ -140,6 +140,7 @@
   }
   .sub-title{
     margin-bottom: 0em;
+    margin-top: 0;
   }
 
   .work-section{
