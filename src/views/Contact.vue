@@ -33,6 +33,8 @@
         </section>
         <a 
           class="contact-info"
+          target="_blank"
+          rel="noopener noreferrer"
           :href="'https://www.linkedin.com/in/michael-walker-719471141/'"
         >
           <img 
@@ -43,6 +45,8 @@
         </a>
         <a 
           class="contact-info"
+          target="_blank"
+          rel="noopener noreferrer"
           :href="'https://github.com/MichaelEWalker87'"
         >
           <img 
@@ -138,6 +142,7 @@ p{
   display: flex;
   text-decoration: none;
   text-align: left;
+  align-items: center;
 }
 
 .email-typed{
@@ -148,6 +153,9 @@ p{
   }
   @media screen  and (max-width: 600px){
     width: 16em;
+  }
+  @media screen  and (max-width: 390px){
+    font: -webkit-control
   }
 }
 .phone-number{

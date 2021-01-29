@@ -2,7 +2,12 @@
   <section>
     <section v-for="(project, index) in projects" :key="index + 'project.name'">
       <h2>{{project.name}}</h2>
-      <a :href='project.github' class="git-hub">
+      <a 
+        :href='project.github' 
+        class="git-hub"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img
           src="../images/GitHub_pur.png"
         />
@@ -98,5 +103,15 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media screen  and (min-width: 1100px) {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      justify-items: center;
+      max-width: 75em;
+      padding-right: 1em;
+      p{
+        padding-right: 1em;
+      }
+    }
   }
 </style>

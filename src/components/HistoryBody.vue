@@ -9,8 +9,10 @@
         <h3 class="info-right sub-title">{{job.title}}</h3>
         <p class="info-right dates">{{job.dates}}</p>
         <a 
-          class="info-right"
+          class="info-right info-a"
           :href="job.link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Link To Website
         </a>
@@ -102,12 +104,20 @@
           font-size: 120%;
         }
       }
+
       .text-body{
         grid-row-start: 5;
         grid-column-start: 1;
         grid-column-end: span 3;
         margin-top: 0.5em;
       }
+    }
+  }
+
+  .info-a{
+      &:hover{
+      @include hover();
+      font-size: 120%;
     }
   }
 

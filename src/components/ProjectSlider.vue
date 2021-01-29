@@ -24,7 +24,9 @@ export default {
 				rewind: true,
 				width: 800,
 				perPage: 1,
-				gap: '1rem',
+        gap: '1rem',
+        keyboard: true,
+        accessibility: true,
 			},
 		};
 	},
@@ -42,4 +44,14 @@ img {
 	padding-bottom: 30px;
   width: 100%
 }
+
+
+.splide__pagination__page{
+  background-color: $background-blue;
+}
+
+.splide__pagination__page.is-active{
+  background-color: $red-text;
+}
+
 </style>
