@@ -92,9 +92,7 @@ computed: {
 <style lang="scss" scoped>
   @import '../styles/_variables.scss';
   @import '../styles/_mixins.scss';
-
-
-
+  
   #nav {
     display: grid;
     align-items: center;

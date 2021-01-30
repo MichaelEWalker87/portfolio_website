@@ -42,7 +42,9 @@ img {
 
 .splide-show {
 	padding-bottom: 30px;
-  width: 100%
+  width: 100%;
+  background-color: darken($color: $background-paper, $amount: 15%);
+  border-radius: 1em;
 }
 
 
