@@ -1,7 +1,7 @@
 <template>
   <section id="nav">
     <img alt="Site Logo" src="../images/MW_Logo_OG.png" class='logo'/>
-    <img alt="Name" src="../images/Name_color.png" class='name'/>
+    <img alt="Name" src="../images/name_color.png" class='name'/>
     <div @click= "setActiveLink('Home')">
     <router-link to="/">
       <img v-if="selectedLink !== 'Home' "
