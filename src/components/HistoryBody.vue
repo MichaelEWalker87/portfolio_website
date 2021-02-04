@@ -108,7 +108,7 @@
             location: 'Cider City, UT',
           }, 
           {
-            name: 'Univerity of Oklahoma',
+            name: 'University of Oklahoma',
             body: 'Completed lead projects with peers and other students from the stagecraft and production classes. I would be instrumental in the training and safety implementation for technical courses. Additionally, I would work as a Technical Director on various projects, overseeing and working closely with the design teams. I also assisted with building, painting, and installing scenery for University Theatre.',
             link: 'https://www.ou.edu/finearts/drama',
             image: OU,
@@ -117,7 +117,7 @@
             location: 'Norman, OK',
           }, 
           {
-            name: 'Univerity of Oklahoma Video and Media Services',
+            name: 'University of Oklahoma Video and Media Services',
             body: 'Worked with local and national businesses to build advertising for the targeted market. We primarily used Adobe products to execute the design. We would also talk to the client on a one-on-one basis to help develop and establish lasting relationships.',
             link: 'http://www.oudaily.com/news/',
             image: OUDaily,

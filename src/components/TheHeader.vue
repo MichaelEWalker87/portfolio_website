@@ -104,6 +104,7 @@ computed: {
     .nav-button{
       width: 4.5em;
       margin-top: 1em;
+      padding: 0.1em 0.5em;
     }
     .name{
       width: 33em;
@@ -129,7 +130,6 @@ computed: {
       &:hover{
         background-color: darken($color: $background-blue, $amount: 10%);
         border-radius: 1em;
-        padding: 0.1em 0.5em;
       }
     }
     @media screen  and (max-width: 940px){
