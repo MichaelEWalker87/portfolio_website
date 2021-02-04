@@ -5,18 +5,20 @@
     >
       <h2>{{job.name}}</h2>
       <section class="company-info">
-        <img :src="job.image"/>
-        <h3 class="info-right sub-title">{{job.title}}</h3>
-        <p class="info-right dates">{{job.dates}}</p>
         <a 
-          class="info-right info-a"
+          class=" info-a"
           :href="job.link"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Link To Website
+        <img 
+          alt="'job.name' logo" 
+          :src="job.image"
+        />
         </a>
-        <p class="info-right">{{job.location}}</p>
+        <h3 class="info-right sub-title">{{job.title}}</h3>
+        <p class="info-right dates">{{job.dates}}</p>
+        <p class="info-right location">{{job.location}}</p>
         <p class="text-body">{{job.body}}</p>
       </section>
     </section>
@@ -64,7 +66,7 @@
           }, 
           {
             name: 'Istonish',
-            body: 'Worked as an IT Specialist devoting my days listening to our client\'s needs and translating them to actionable outcomes that benefited the communities we served. Through listening and analyzing the client\'s problems, I was able to make a difference and help those with computers and networking issues by resolving without escalation 90 percent of the time. foster an environment that cultivated a mindset of growth. I worked with our team leads to help bring people on and assisted in the training and shadowing process.',
+            body: 'Worked as an IT Specialist devoting my days listening to our client\'s needs and translating them to actionable outcomes that benefited the communities we served. Through listening and analyzing the client\'s problems, I was able to make a difference and help those with computers and networking issues by resolving without escalation 90 percent of the time. I fostered an environment that cultivated a mindset of growth. I worked with our team leads to help bring people on and assisted in the training and shadowing process.',
             link: 'https://www.istonish.com/',
             image: Istonish,
             dates: '2019-2020',
@@ -100,7 +102,7 @@
           }, 
           {
             name: 'Utah Shakespear Festival',
-            body: 'Managed large stage crews, responsibilities included making a daily schedule for the crew and management of 4 theatrical spaces. Additionally, I oversaw all daily scenic changeovers and audience tech talks. Tracked all needed repairs, created Changeover Reports, purchased all needed materials for production upkeep, and facilitated general notes for the theatrical spaces.',
+            body: 'Managed large stage crews, responsibilities included making a daily schedule for the crew and management of 4 theatrical spaces. Additionally, I oversaw all daily scenic changeovers and audience tech talks. I tracked all needed repairs, created Changeover Reports, purchased all needed materials for production upkeep, and facilitated general notes for the theatrical spaces.',
             link: 'https://www.bard.org/',
             image: Utah,
             dates: '2014-2014',
@@ -109,7 +111,7 @@
           }, 
           {
             name: 'University of Oklahoma',
-            body: 'Completed lead projects with peers and other students from the stagecraft and production classes. I would be instrumental in the training and safety implementation for technical courses. Additionally, I would work as a Technical Director on various projects, overseeing and working closely with the design teams. I also assisted with building, painting, and installing scenery for University Theatre.',
+            body: 'Completed lead projects with peers and other students from the stagecraft and production classes. I was instrumental in the training and safety implementation for technical courses. Additionally, I would work as a Technical Director on various projects, overseeing and working closely with the design teams. I also assisted with building, painting, and installing scenery for University Theatre.',
             link: 'https://www.ou.edu/finearts/drama',
             image: OU,
             dates: '2011-2014',
@@ -146,6 +148,7 @@
 
   .company-info{
     display: grid;
+    min-height: 253px;
     grid-template-columns: 1fr 2fr 3fr;
     @include p-text();
     @media screen  and (max-width: 955px){
@@ -169,27 +172,27 @@
         grid-column-end: span 2;
         margin-bottom: 0.5em;
       }
-      
-      a{
-        &:hover{
-          @include hover();
-          font-size: 120%;
-        }
-      }
 
       .text-body{
         grid-row-start: 5;
         grid-column-start: 1;
         grid-column-end: span 3;
         margin-top: 0.5em;
+        padding-left: 1em;
+      }
+      
+      .sub-title{
+        padding-top: 1em;
       }
     }
   }
 
   .info-a{
+      padding: 1em;
+      grid-row-end: span 4;
       &:hover{
       @include hover();
-      font-size: 120%;
+      height: fit-content;
     }
   }
 
@@ -216,7 +219,7 @@
   }
   .sub-title{
     margin-bottom: 0em;
-    margin-top: 0;
+    margin-top: 1em;
   }
 
   .work-section{
@@ -245,5 +248,9 @@
     grid-row-end: span 4;
     grid-row-start: 1;
     @include p-text-no-margin()
+  }
+
+  .location{
+    margin-top: 0;  
   }
 </style>
