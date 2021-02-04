@@ -150,6 +150,7 @@ export default {
     text-decoration: none;
     img{
       width: 2em;
+      padding-right: 0.3em;
     }
     &:hover{
       @include hover();
