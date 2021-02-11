@@ -57,7 +57,7 @@
         jobs: [
                     {
             name: 'Turing School of Software & Design',
-            body: 'Focused on building client-side applications that are accessible to all users and efficiently process large and complex data sets. While at Turing, I covered the basics of object-oriented programming, modern frameworks, cross-browser compatibility, and developed basic UX and design principles. Technologies and skills I developed while at Turing include: JavaScript(ES5-ES9), React, Hooks, HTML5, CSS3, SCSS, Webpack, Mocha/Chai, Jest, Vue, object-oriented programming, Agile methodologies, test-driven development, and Git/GitHub workflows.',
+            body: 'Focused on building client-side applications that are accessible to all users and efficiently process large and complex data sets. While at Turing, I covered the basics of object-oriented programming, modern frameworks, cross-browser compatibility, and developed basic UX and design principles. Technologies and skills I developed while at Turing include: JavaScript(ES5-ES9), React, HTML5, CSS3, SCSS, Webpack, Mocha/Chai, Jest, Vue, object-oriented programming, Agile methodologies, test-driven development, and Git/GitHub workflows.',
             link: 'https://frontend.turing.io/',
             image: Turing,
             dates: '2020-2021',

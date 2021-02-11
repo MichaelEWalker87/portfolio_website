@@ -92,7 +92,7 @@ export default {
           body: 'Saturn\'d Earth is a social media application that captures the user\'s latitude and longitude and displays a ring on the map where the post was made. If anyone near the post "likes" the post, the ring will grow larger. Saturn\'d Earth tracks each post and crosses the globe one like at a time, where only the rarified few encircle the globe.',
           github: 'https://github.com/Saturnd-Earth/se-fe',
           photos: [saturn1, saturn2, saturn3, saturn4, saturn5],
-          techUsed: ['React JS with Hooks', 'SCSS', 'Figma', 'Github Project Boards', 'Google Maps API', 'Jest Testing', 'Github Project Boards']
+          techUsed: ['React', 'SCSS', 'Figma', 'Github Project Boards', 'Google Maps API', 'Jest Testing', 'Github Project Boards']
         },
         {
           name: 'Fit-Lit',
