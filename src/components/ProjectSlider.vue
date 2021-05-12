@@ -1,7 +1,9 @@
 <template>
 	<splide class="splide-show" :options="options">
 		<splide-slide v-for="(photo, index) in photos" :key="index">
-			<img :src="photo" alt="" />
+			<img :src="photo" :alt=titles[index] />
+			<h3 class="photo-titles">{{titles[index]}}</h3>
+			<!-- <p>{{projects.titles[0]}}</p> -->
 		</splide-slide>
 	</splide>
 </template>
@@ -17,6 +19,7 @@ export default {
 	name: 'ProjectSlider',
 	props: {
 		photos: Array,
+		titles: Array,
 	},
 	data() {
 		return {
@@ -56,4 +59,9 @@ img {
   background-color: $red-text;
 }
 
+.photo-titles{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	color: $purple-text;
+}
 </style>

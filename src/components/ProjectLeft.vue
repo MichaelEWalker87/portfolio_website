@@ -27,7 +27,7 @@
             {{tech}}
           </li>
         </ul>
-        <ProjectSlider :photos="project.photos"     
+        <ProjectSlider :photos="project.photos"  :titles="project.titles"   
           class="slider"
         />
       </section>
@@ -82,6 +82,7 @@ export default {
 
   props: {
     photos: Array,
+    titles: Array,
   },
 
   data(){
@@ -92,6 +93,7 @@ export default {
           body: 'Saturn\'d Earth is a social media application that captures the user\'s latitude and longitude and displays a ring on the map where the post was made. If anyone near the post "likes" the post, the ring will grow larger. Saturn\'d Earth tracks each post and crosses the globe one like at a time, where only the rarified few encircle the globe.',
           github: 'https://github.com/Saturnd-Earth/se-fe',
           photos: [saturn1, saturn2, saturn3, saturn4, saturn5],
+          titles: ["Mockup", "Data Diagram", "Starting App Visual", "Application Form", "Application Post"],
           techUsed: ['React', 'SCSS', 'Figma', 'Github Project Boards', 'Google Maps API', 'Jest Testing', 'Github Project Boards']
         },
         {
@@ -99,6 +101,7 @@ export default {
           body: 'This project uses test-driven devolvement to build a fitness app in ES6 Javascript. The application takes data from a given set and processes the data to display it to the user. Categories include hydration data for the day, step goal and if that goal was achieved, sleep data, and daily vs weekly bar graphs.',
           github: 'https://github.com/BlakeDonn/fitlit-starter-kit',
           photos: [fitlit1, fitlit2, fitlit3, fitlit4, fitlit5],
+          titles: ["Quick Idea Wireframe", "Donut Chart", "Application Top", "Application Bottom", "Whole Application"],
           techUsed: ['CSS animations', 'Javascript ES6', 'Test-Driven Devoplement with Jest', 'Github Project Boards']
         },
         {
@@ -106,6 +109,7 @@ export default {
           body: 'Good Work/Life Beer-lance Travel Tracking project. A user is able to log in, select a destination, start date, days traveling, and a number of travelers then hit submit. Upon the submission, the user will be able to view the trip in the pending tab. The user is also able to view the past, future, and present trips by clicking the appropriate link.',
           github: 'https://github.com/MichaelEWalker87/Travel-Tracker',
           photos: [travel1, travel2, travel3, travel4],
+          titles: ["Application Sing In", "Application Home", "Future Trips Tab", "Present Trips Tab"],
           techUsed: ['JavaScript', 'SASS', 'HTML', 'API Getter/Setters', 'Github Project Boards']
         },
         {
@@ -113,6 +117,7 @@ export default {
           body: 'For this project, our team worked on a Brownfield code base to implement a survey feature to an online shopping site. The application changes will allow a user to take a survey and based on the selections, the survey will produce a style recommendation. This project was our first major group project with both the Front-End and Back-End Engineering teams. On this project, I acted as a Front-End Developer and Scrum Master.',
           github: 'https://github.com/GreyMatteOr/crate',
           photos: [crate1, crate2, crate3, crate4, crate5],
+          titles: ["Quick Idea Mockup", "Quick Idea Mockup Survey", "Quick Idea Mockup Final Result", "Application Survey", "Application Result"],
           techUsed: ['React with Redux', 'Github Project Boards', 'CSS'] 
         },
         {
@@ -120,6 +125,7 @@ export default {
           body: 'This project entailed making a Tic-Tac-Toe Game that uses local storage to save the wins of the game and present those wins to the user. The game will place icons and announce the turn order as well as if the player wins or ties based on built-in javascript logic. The project also utilizes keyframes to display a celebratory banner upon win. This was the final project for Mod-1 in the Turing curriculum.',
           github: 'https://github.com/MichaelEWalker87/Tic-Tac-Toe',
           photos: [tic1, tic2, tic3, tic4, tic5],
+          titles: ["Game Play Lion's Turn", "Game Play Snake's Turn", "Winning Snake Animation", "Game Win Count Increase", "Winning Lion Animation"],
           techUsed: ['Javascript', 'LocalStorage', 'HTML', 'CSS']
         },
       ]
