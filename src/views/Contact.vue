@@ -2,56 +2,65 @@
   <section class="top-contact">
     <h1>Contact</h1>
     <section class='contact'>
-      <img src="../images/proto_photo.png" class="headshot"/>
+      <img src="../images/proto_photo.png" class="headshot" alt="Headshot Photo"/>
       <section class="contact-right">
         <section class="contact-info">
           <img 
             src="../images/Gmail_pur.png"
             class="email"
+            alt="Email Icon"
           />
           <img
             src="../images/Email.png"
             class="email-typed"
+            alt="Michael.E.Walker.87@gmail.com"
           />
         </section>
         <section class="contact-info">
           <img 
             src="../images/Phone_pur.png"
             class="icons phone"
+            alt="Phone Icon"
           />
           <img
             src="../images/Phone_Number.png"
             class="phone-number"
+            alt="Phone Number 520-907-6955"
           />
         </section>
         <section class="contact-info">
           <img 
             src="../images/Resume_pur.png"
             class="icons"
+            alt="Resume Icon"
           />
           <p>Contact For Resume</p>
         </section>
         <a 
           class="contact-info"
           target="_blank"
+          alt="Linked Icon"
           rel="noopener noreferrer"
           :href="'https://www.linkedin.com/in/michael-walker-719471141/'"
         >
           <img 
             src="../images/LinkedIn_pur.png"
             class="icons"
+            alt="LinkedIn Icon Image"
           />
           <p>Linkedin.com/in/michael-walker-719471141/</p>
         </a>
         <a 
           class="contact-info"
           target="_blank"
+          alt="Github Icon"
           rel="noopener noreferrer"
           :href="'https://github.com/MichaelEWalker87'"
         >
           <img 
             src="../images/GitHub_pur.png"
             class="icons"
+            alt="Github Icon Image"
           />
           <p>Github.com/MichaelEWalker87</p>
         </a>
