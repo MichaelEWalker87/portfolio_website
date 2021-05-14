@@ -3,6 +3,7 @@
     <h1>Project</h1>
     <section class="project-body">
       <ProjectLeft/>
+      <LoadIcon/>
     </section>
   </section>
 </template>
@@ -10,11 +11,13 @@
 
 <script>
   import ProjectLeft from '../components/ProjectLeft';
+  //import LoadIcon from './LoadIcon.vue';
 
   export default {
       name: 'Project',
       components: {
       ProjectLeft,
+      //LoadIcon,
     }
   }
 </script>
