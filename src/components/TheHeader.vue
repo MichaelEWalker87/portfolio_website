@@ -1,7 +1,21 @@
 <template>
   <section id="nav">
-    <img alt="Site Logo" src="../images/MW_Logo_OG.png" class='logo'/>
-    <img alt="Name" src="../images/Name_color.png" class='name'/>
+    <vue-load-image>
+      <img alt="Site Logo" 
+        slot="image" 
+        src="../images/MW_Logo_OG.png" 
+        class='logo'
+      />
+      <LoadIcon slot="preloader" src="../images/Gmail_pur.png"/>
+    </vue-load-image>
+    <vue-load-image>
+      <img alt="Name" 
+        slot="image" 
+        src="../images/name_color.png" 
+        class='name'
+      />
+      <LoadIcon slot="preloader" src="../images/Gmail_pur.png"/>
+    </vue-load-image>
     <div @click= "setActiveLink('Home')">
     <router-link to="/">
       <img v-if="selectedLink !== 'Home' "
@@ -67,25 +81,31 @@
 </template>
 
 <script>
+  import VueLoadImage from 'vue-load-image'
+  import LoadIcon from './../views/LoadIcon.vue'
 
-export default {
-data(){
-  return{
-    selectedLink: this.$route.name,
-  }
-},
+  export default {
+    components:{
+      'vue-load-image': VueLoadImage,
+      LoadIcon,
+    },
+    data(){
+      return{
+        selectedLink: this.$route.name,
+      }
+  },
 
-methods:{
-  setActiveLink(name){
-    this.selectedLink = name;
-  }
-},
-
-computed: {
-    currentRouteName() {
-        return this.$route.name;
+  methods:{
+    setActiveLink(name){
+      this.selectedLink = name;
     }
-}
+  },
+
+  computed: {
+      currentRouteName() {
+          return this.$route.name;
+      }
+  }
 }
 </script>
 
@@ -104,6 +124,7 @@ computed: {
     .nav-button{
       width: 4.5em;
       margin-top: 1em;
+      padding: 0.1em 0.5em;
     }
     .name{
       width: 33em;
@@ -129,7 +150,6 @@ computed: {
       &:hover{
         background-color: darken($color: $background-blue, $amount: 10%);
         border-radius: 1em;
-        padding: 0.1em 0.5em;
       }
     }
     @media screen  and (max-width: 940px){

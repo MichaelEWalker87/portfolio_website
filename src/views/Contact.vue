@@ -2,56 +2,93 @@
   <section class="top-contact">
     <h1>Contact</h1>
     <section class='contact'>
-      <img src="../images/proto_photo.png" class="headshot"/>
+      <vue-load-image>
+        <img src="../images/proto_photo.png" 
+          class="headshot" 
+          alt="Headshot Photo"
+          slot="image" 
+        />
+        <div slot="error">Headshot Image failed to load</div>
+        <LoadIcon slot="preloader" src="../images/Gmail_pur.png"/>
+      </vue-load-image>
       <section class="contact-right">
         <section class="contact-info">
-          <img 
-            src="../images/Gmail_pur.png"
-            class="email"
-          />
-          <img
-            src="../images/Email.png"
-            class="email-typed"
-          />
+          <vue-load-image>
+            <img 
+              src="../images/Gmail_pur.png"
+              class="email"
+              alt="Email Icon"
+              slot="image" 
+            />
+            <LoadIcon slot="preloader" src="../images/Gmail_pur.png"/>
+          </vue-load-image>
+          <vue-load-image>
+            <img
+              src="../images/Email.png"
+              class="email-typed"
+              alt="Michael.E.Walker.87@gmail.com"
+              slot="image" 
+            />            
+            <LoadIcon slot="preloader" src="../images/Gmail_pur.png"/>
+          </vue-load-image>
         </section>
         <section class="contact-info">
-          <img 
-            src="../images/Phone_pur.png"
-            class="icons phone"
-          />
-          <img
-            src="../images/Phone_Number.png"
-            class="phone-number"
-          />
+          <vue-load-image>
+            <img 
+              src="../images/Phone_pur.png"
+              class="icons phone"
+              alt="Phone Icon"
+              slot="image" 
+            />
+            <LoadIcon slot="preloader" src="../images/Gmail_pur.png"/>
+          </vue-load-image>
+          <vue-load-image>
+            <img
+              src="../images/Phone_Number.png"
+              class="phone-number"
+              alt="Phone Number 520-907-6955"
+              slot="image" 
+            />
+            <LoadIcon slot="preloader" src="../images/Gmail_pur.png"/>
+          </vue-load-image> 
         </section>
         <section class="contact-info">
-          <img 
-            src="../images/Resume_pur.png"
-            class="icons"
-          />
+          <vue-load-image>
+            <img 
+              src="../images/Resume_pur.png"
+              class="icons"
+              alt="Resume Icon"
+              slot="image" 
+            />
+            <LoadIcon slot="preloader" src="../images/Gmail_pur.png"/>
+          </vue-load-image> 
           <p>Contact For Resume</p>
         </section>
         <a 
           class="contact-info"
           target="_blank"
+          alt="Linked Icon"
           rel="noopener noreferrer"
           :href="'https://www.linkedin.com/in/michael-walker-719471141/'"
         >
           <img 
             src="../images/LinkedIn_pur.png"
             class="icons"
+            alt="LinkedIn Icon Image"
           />
           <p>Linkedin.com/in/michael-walker-719471141/</p>
         </a>
         <a 
           class="contact-info"
           target="_blank"
+          alt="Github Icon"
           rel="noopener noreferrer"
           :href="'https://github.com/MichaelEWalker87'"
         >
           <img 
             src="../images/GitHub_pur.png"
             class="icons"
+            alt="Github Icon Image"
           />
           <p>Github.com/MichaelEWalker87</p>
         </a>
@@ -59,6 +96,19 @@
     </section>
   </section>
 </template>
+
+<script>
+import VueLoadImage from 'vue-load-image'
+import LoadIcon from './LoadIcon'
+
+  export default {
+    name: 'Contact',
+    components: {
+      'vue-load-image': VueLoadImage,
+      LoadIcon,
+    }
+  }
+</script>
 
 <style lang="scss" scoped>
 @import '../styles/_variables.scss';
@@ -176,7 +226,6 @@ h1{
 a{
   &:hover{
     @include hover();
-    font-size: 110%;
   }
 }
 </style>
