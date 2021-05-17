@@ -4,10 +4,9 @@
 			<section >
 				<vue-load-image>
 					<img :src="photo" :alt=titles[index] slot="image"/>
-					<LoadIcon slot="preloader" src="../images/Gmail_pur.png"/>
+					<LoadIcon class="load-icon" slot="preloader" src="../images/Gmail_pur.png"/>
         </vue-load-image>
 				<h3 class="photo-titles">{{titles[index]}}</h3>
-				<!-- <p>{{projects.titles[0]}}</p> -->
 			</section>
 		</splide-slide>
 	</splide>
@@ -75,5 +74,9 @@ img {
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 	color: $purple-text;
+}
+
+.load-icon{
+
 }
 </style>

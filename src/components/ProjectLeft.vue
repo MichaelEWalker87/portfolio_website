@@ -27,29 +27,39 @@
             {{tech}}
           </li>
         </ul>
-        <ProjectSlider :photos="project.photos"  :titles="project.titles"   
-          class="slider"
-        />
+        <vue-load-image>
+          <ProjectSlider :photos="project.photos"  :titles="project.titles"   
+            class="slider" slot="image"
+          />
+          <LoadIcon class="load-icon" slot="preloader" src="../images/Gmail_pur.png"/>
+        </vue-load-image>
+          <ProjectSlider :photos="project.photos"  :titles="project.titles"   
+            class="slider" slot="image"
+          />
       </section>
     </section>
   </section>
 </template>
 
 <script>
-import ProjectSlider from './ProjectSlider';
-//saturn
+  import ProjectSlider from './ProjectSlider';
+  import VueLoadImage from 'vue-load-image'
+  import LoadIcon from './../views/LoadIcon.vue'
+  //saturn
 
-export default {
-  name: 'ProjectLeft',
+  export default {
+    name: 'ProjectLeft',
 
-  components: {
-    ProjectSlider,
-  },
+    components: {
+      ProjectSlider,
+      VueLoadImage,
+      LoadIcon,
+    },
 
-  props: {
-    projects: Array,
-  },
-} 
+    props: {
+      projects: Array,
+    },
+  } 
 </script>
 
 <style lang="scss" scoped>
@@ -78,10 +88,8 @@ export default {
     }
     &:hover{
       @include hover();
-      font-size: 105%;;
-      img{
-        width: 2.3em;
-      }
+      padding-right: 0.5rem;
+      padding-right: 0.3rem;
     }
   }
 
