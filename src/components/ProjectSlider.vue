@@ -1,21 +1,33 @@
 <template>
 	<splide class="splide-show" :options="options">
 		<splide-slide v-for="(photo, index) in photos" :key="index">
-			<img :src="photo" :alt=titles[index] />
-			<h3 class="photo-titles">{{titles[index]}}</h3>
-			<!-- <p>{{projects.titles[0]}}</p> -->
+			<section >
+				<vue-load-image>
+					<img :src="photo" :alt=titles[index] slot="image"/>
+					<LoadIcon slot="preloader" src="../images/Gmail_pur.png"/>
+        </vue-load-image>
+				<h3 class="photo-titles">{{titles[index]}}</h3>
+				<!-- <p>{{projects.titles[0]}}</p> -->
+			</section>
 		</splide-slide>
 	</splide>
 </template>
 
 <script>
-import { Splide, SplideSlide } from '@splidejs/vue-splide';
-import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+  import VueLoadImage from 'vue-load-image'
+  import LoadIcon from './../views/LoadIcon.vue'
+	import { Splide, SplideSlide } from '@splidejs/vue-splide';
+	import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+	// import LoadIcon from '../views/LoadIcon.vue'
+
 export default {
 	components: {
 		Splide,
 		SplideSlide,
+		'vue-load-image': VueLoadImage,
+    LoadIcon,
 	},
+
 	name: 'ProjectSlider',
 	props: {
 		photos: Array,

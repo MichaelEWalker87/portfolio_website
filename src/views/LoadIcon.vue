@@ -62,7 +62,7 @@ text{
   transform-origin: 50% 50%;
   stroke-dashoffset:-1933;
   stroke-dasharray:1933;
-  animation: logo 5s infinite alternate ease;
+  animation: logo 5s infinite alternate-reverse ease;
   fill:none;
   background-color: "blue";
 }

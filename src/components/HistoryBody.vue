@@ -11,10 +11,14 @@
           target="_blank"
           rel="noopener noreferrer"
         >
+        <vue-load-image>
         <img 
-          alt="'job.name' logo" 
+          :alt="job.name + ' logo'" 
           :src="job.image"
-        />
+          slot="image" 
+        />            
+        <LoadIcon slot="preloader" src="../images/Gmail_pur.png"/>
+        </vue-load-image>
         </a>
         <h3 class="info-right sub-title">{{job.title}}</h3>
         <p class="info-right dates">{{job.dates}}</p>
@@ -31,6 +35,9 @@
 </template>
 
 <script>
+  import VueLoadImage from 'vue-load-image'
+  import LoadIcon from './../views/LoadIcon.vue'
+
   import Turing from '../images/work_photos/Turing.png'
   import Istonish from '../images/work_photos/Istonish.jpg'
   import TMobile from '../images/work_photos/TMobile.png'
@@ -45,7 +52,8 @@
     name: 'HistoryBody',
 
     components: {
-
+      'vue-load-image': VueLoadImage,
+      LoadIcon,
     },
 
     props: {
