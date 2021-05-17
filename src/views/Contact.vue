@@ -226,7 +226,6 @@ h1{
 a{
   &:hover{
     @include hover();
-    font-size: 110%;
   }
 }
 </style>
