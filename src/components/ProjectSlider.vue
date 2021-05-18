@@ -2,10 +2,7 @@
 	<splide class="splide-show" :options="options">
 		<splide-slide v-for="(photo, index) in photos" :key="index">
 			<section >
-				<vue-load-image>
 					<img :src="photo" :alt=titles[index] slot="image"/>
-					<LoadIcon class="load-icon" slot="preloader" src="../images/Gmail_pur.png"/>
-        </vue-load-image>
 				<h3 class="photo-titles">{{titles[index]}}</h3>
 			</section>
 		</splide-slide>
@@ -13,8 +10,6 @@
 </template>
 
 <script>
-  import VueLoadImage from 'vue-load-image'
-  import LoadIcon from './../views/LoadIcon.vue'
 	import { Splide, SplideSlide } from '@splidejs/vue-splide';
 	import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 	// import LoadIcon from '../views/LoadIcon.vue'
@@ -23,8 +18,6 @@ export default {
 	components: {
 		Splide,
 		SplideSlide,
-		'vue-load-image': VueLoadImage,
-    LoadIcon,
 	},
 
 	name: 'ProjectSlider',
