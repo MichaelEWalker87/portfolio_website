@@ -27,15 +27,15 @@
             {{tech}}
           </li>
         </ul>
-        <ProjectSlider :photos="project.photos"  :titles="project.titles"   
-          class="slider" slot="image"
-        />
-        <vue-load-image>
+        <vue-load-image >
           <ProjectSlider :photos="project.photos"  :titles="project.titles"   
             class="slider" slot="image"
           />
           <LoadIcon class="load-icon" slot="preloader" src="../images/Gmail_pur.png"/>
         </vue-load-image>
+        <ProjectSlider :photos="project.photos"  :titles="project.titles"   
+          class="slider" slot="image"
+        />
       </section>
     </section>
   </section>
