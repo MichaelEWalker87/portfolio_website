@@ -19,7 +19,7 @@
   import starWarsR2 from '../images/project_work/StarWarsRacing/GameEnd.png'
   import starWarsR3 from '../images/project_work/StarWarsRacing/X-WingWins.png'
 
-  //brick
+  //Brick
 
   import brick1 from '../images/project_work/BrickBreaker/GameStart.png'
   import brick2 from '../images/project_work/BrickBreaker/MidGame.png'
