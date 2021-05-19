@@ -13,7 +13,18 @@
 <script>
   import ProjectLeft from '../components/ProjectLeft';
   // import LoadIcon from './LoadIcon'
-    //saturn
+ 
+ //Star War Racing 
+  import starWarsR1 from '../images/project_work/StarWarsRacing/GameStart.png'
+  import starWarsR2 from '../images/project_work/StarWarsRacing/GameEnd.png'
+  import starWarsR3 from '../images/project_work/StarWarsRacing/X-WingWins.png'
+
+  //brick
+
+  import brick1 from '../images/project_work/BrickBreaker/GameStart.png'
+  import brick2 from '../images/project_work/BrickBreaker/MidGame.png'
+
+  //saturn
   import saturn1 from '../images/project_work/SaturndEarth/SE_Wireframe.png'
   import saturn2 from '../images/project_work/SaturndEarth/DataD.png'
   import saturn3 from '../images/project_work/SaturndEarth/Saturnd_Earth.png'
@@ -56,13 +67,23 @@
     
     data(){
       return{
-        loadPhotos:[saturn1, saturn2, saturn3, saturn4, saturn5,
-          fitlit1, fitlit2, fitlit3, fitlit4, fitlit5,
-          travel1, travel2, travel3, travel4,
-          crate1, crate2, crate3, crate4, crate5,
-          tic1, tic2, tic3, tic4, tic5
-        ],
         projects: [
+          {
+            name: 'Star Wars Racing',
+            body: 'This was a course from Udemy that covered the basics of tile game building. The application allows for two players to race each other in an old retro gaming fashion. Upon winning the race the game will reset. The purpose of this application was to get practice with the HTML5 Canvas Element and Vanilla Javascript. This game is a two player game with player one being in an X-Wing and player two in the Y-Wing.',
+            github: 'https://github.com/MichaelEWalker87/RaceCar',
+            photos: [starWarsR1, starWarsR2, starWarsR3],
+            titles: ["In Game Play Start", "In Game Play End", "In Game X-Wing Wins"],
+            techUsed: ['Javascript', 'HTML5 Canvas', 'Github', 'CSS']
+          },
+          {
+            name: 'Brick Braker',
+            body: 'Project made to get hands-on practice with Canvas and game development. This project tracks a Udemy course in game design. The application is a classic videogame recreation of Brick Breaker. The user can control the paddle with the mouse tracking motion and use the paddle to direct the ball placement. If the player loses or the ball goes out of play, the board will reset.',
+            github: 'https://github.com/MichaelEWalker87/Canvas_Games_Intro',
+            photos: [brick1, brick2],
+            titles: ["In Game Start", "Mid Game Play"],
+            techUsed: ['HTML5 Canvas', 'Github']
+          },
           {
             name: 'Saturn\'d Earth',
             body: 'Saturn\'d Earth is a social media application that captures the user\'s latitude and longitude and displays a ring on the map where the post was made. If anyone near the post "likes" the post, the ring will grow larger. Saturn\'d Earth tracks each post and crosses the globe one like at a time, where only the rarified few encircle the globe.',
