@@ -50,6 +50,12 @@
   import crate4 from '../images/project_work/Crate/final.png'
   import crate5 from '../images/project_work/Crate/finalResult.png'
 
+  //Motivtional Posters
+  import motivation1 from '../images/project_work/Motivation/RegularPoster.png'
+  import motivation2 from '../images/project_work/Motivation/MakeYourOwn.png'
+  import motivation3 from '../images/project_work/Motivation/CustomPoster.png'
+  import motivation4 from '../images/project_work/Motivation/MiniPosters.png'
+
   //Tic-Tac-Toe
 
   import tic1 from '../images/project_work/TicTacToe/ticOne.png'
@@ -115,6 +121,14 @@
             photos: [crate1, crate2, crate3, crate4, crate5],
             titles: ["Quick Idea Mockup", "Quick Idea Mockup Survey", "Quick Idea Mockup Final Result", "Application Survey", "Application Result"],
             techUsed: ['React with Redux', 'Github Project Boards', 'CSS'] 
+          },
+          {
+            name: 'Hang In There Motivational Poster',
+            body: 'This application was one of my first introductions to Javascript, CSS, and HTML. This application covers allowing a user to cycle throw a series of motivation poster images and slogans. If the user likes the Motivational poster, the user can save the poster. The application then will use local storage to save the poster in the show "Saved Poster" section. The user can also make a new poster in the "Make Your Own Poster" section.',
+            github: 'https://github.com/MichaelEWalker87/hang-in-there-boilerplate',
+            photos: [motivation1, motivation2, motivation3, motivation4],
+            titles: ["Home Page", "Make Your Own Poster Form", "Custom Poster ", "Mini Posters"],
+            techUsed: ['Javascript', 'LocalStorage', 'HTML', 'CSS']
           },
           {
             name: 'Tic-Tac-Toe',
