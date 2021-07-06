@@ -66,7 +66,9 @@
   
   //monster rolodex
 
-  import monster1 from '../images/project_work/MonsterRolodex/'
+  import monster1 from '../images/project_work/MonsterRolodex/Home.png'
+  import monster2 from '../images/project_work/MonsterRolodex/Search.png'
+  import monster3 from '../images/project_work/MonsterRolodex/buildScript.png'
 
   export default {
       name: 'Project',
@@ -139,6 +141,14 @@
             body: 'This project entailed making a Tic-Tac-Toe Game that uses local storage to save the wins of the game and present those wins to the user. The game will place icons and announce the turn order as well as if the player wins or ties based on built-in javascript logic. The project also utilizes keyframes to display a celebratory banner upon win. This was the final project for Mod-1 in the Turing curriculum.',
             github: 'https://github.com/MichaelEWalker87/Tic-Tac-Toe',
             photos: [tic1, tic2, tic3, tic4, tic5],
+            titles: ["Game Play Lion's Turn", "Game Play Snake's Turn", "Winning Snake Animation", "Game Win Count Increase", "Winning Lion Animation"],
+            techUsed: ['Javascript', 'LocalStorage', 'HTML', 'CSS']
+          },
+          {
+            name: 'Monster Rolodex',
+            body: `This application was built to gain additional practice with React as well as getting familiar with Github Pages.  The application allows a user to filter via search and will display the search results in a CSS grid. The application can be viewed here {<a href="https://michaelewalker87.github.io/monster-rolodex/>Site Deoplyed</a>}`,
+            github: 'https://github.com/MichaelEWalker87/Tic-Tac-Toe',
+            photos: [monster1, monster2, monster3],
             titles: ["Game Play Lion's Turn", "Game Play Snake's Turn", "Winning Snake Animation", "Game Win Count Increase", "Winning Lion Animation"],
             techUsed: ['Javascript', 'LocalStorage', 'HTML', 'CSS']
           },
