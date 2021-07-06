@@ -63,6 +63,12 @@
   import tic3 from '../images/project_work/TicTacToe/sWins.png'
   import tic4 from '../images/project_work/TicTacToe/nextGame.png'
   import tic5 from '../images/project_work/TicTacToe/Gwin.png'
+  
+  //monster rolodex
+
+  import monster1 from '../images/project_work/MonsterRolodex/Home.png'
+  import monster2 from '../images/project_work/MonsterRolodex/Search.png'
+  import monster3 from '../images/project_work/MonsterRolodex/buildScript.png'
 
   export default {
       name: 'Project',
@@ -137,6 +143,14 @@
             photos: [tic1, tic2, tic3, tic4, tic5],
             titles: ["Game Play Lion's Turn", "Game Play Snake's Turn", "Winning Snake Animation", "Game Win Count Increase", "Winning Lion Animation"],
             techUsed: ['Javascript', 'LocalStorage', 'HTML', 'CSS']
+          },
+          {
+            name: 'Monster Rolodex',
+            body: `This application was built to gain additional practice with React as well as getting familiar with Github Pages.  The application allows a user to filter via search and will display the search results in a CSS grid. The application can be viewed by clicking on the link found in the github repository ReadMe`,
+            github: 'https://github.com/MichaelEWalker87/monster-rolodex',
+            photos: [monster1, monster2, monster3],
+            titles: ["Home Screen", "Search Filter", "Scripts"],
+            techUsed: ['React', 'Github Pages', 'CSS']
           },
         ]
       }
