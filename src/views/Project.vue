@@ -146,11 +146,11 @@
           },
           {
             name: 'Monster Rolodex',
-            body: `This application was built to gain additional practice with React as well as getting familiar with Github Pages.  The application allows a user to filter via search and will display the search results in a CSS grid. The application can be viewed here {<a href="https://michaelewalker87.github.io/monster-rolodex/>Site Deoplyed</a>}`,
-            github: 'https://github.com/MichaelEWalker87/Tic-Tac-Toe',
+            body: `This application was built to gain additional practice with React as well as getting familiar with Github Pages.  The application allows a user to filter via search and will display the search results in a CSS grid. The application can be viewed by clicking on the link found in the github repository ReadMe`,
+            github: 'https://github.com/MichaelEWalker87/monster-rolodex',
             photos: [monster1, monster2, monster3],
-            titles: ["Game Play Lion's Turn", "Game Play Snake's Turn", "Winning Snake Animation", "Game Win Count Increase", "Winning Lion Animation"],
-            techUsed: ['Javascript', 'LocalStorage', 'HTML', 'CSS']
+            titles: ["Home Screen", "Search Filter", "Scripts"],
+            techUsed: ['React', 'Github Pages', 'CSS']
           },
         ]
       }
