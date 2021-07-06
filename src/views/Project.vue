@@ -64,6 +64,10 @@
   import tic4 from '../images/project_work/TicTacToe/nextGame.png'
   import tic5 from '../images/project_work/TicTacToe/Gwin.png'
   
+  //monster rolodex
+
+  import monster1 from '../images/project_work/MonsterRolodex/'
+
   export default {
       name: 'Project',
       components: {
