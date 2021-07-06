@@ -63,7 +63,7 @@
   import tic3 from '../images/project_work/TicTacToe/sWins.png'
   import tic4 from '../images/project_work/TicTacToe/nextGame.png'
   import tic5 from '../images/project_work/TicTacToe/Gwin.png'
-
+  
   export default {
       name: 'Project',
       components: {
